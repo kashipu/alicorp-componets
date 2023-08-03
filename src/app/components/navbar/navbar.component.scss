@@ -1,0 +1,116 @@
+header {
+  background-color: #E62020;
+  padding: .7rem 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-section-1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.burguer-left-icon {
+    display: flex;
+  .burguer-icon {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.logo-container {
+  display: flex;
+}
+
+.nav-section-2 {
+  display: flex;
+  align-items: center;
+  .text-user-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding-right: 1rem;
+    text-align: right;
+  }
+  .text-user-summary-name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+.button-avatar {
+  position: relative;
+  cursor: pointer;
+  padding-right: 1.40rem;
+  .circle-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    img {
+      width: 18px;
+    }
+  }
+  .circle-status {
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: green;
+    top: 0px;
+    left: 35px;
+    z-index: 2;
+  }
+  .circle-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem .4rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    img {
+      width: 14px;
+    }
+  }
+}
+.dropdown-box {
+  position: relative;
+}
+.dropdown-menu {
+  max-width: 300px;
+  display: flex;
+  position: absolute;
+  right: 16px;
+  border: 1px solid gray;
+  padding: 1rem;
+  display: none;
+  transition: opacity 2s ease-out;
+  opacity: 0;
+}
+
+.dropdown-menu.active {
+  display: flex;
+  opacity: 1;
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .nav-section-2 .text-user-summary {
+    display: none;
+  }
+}

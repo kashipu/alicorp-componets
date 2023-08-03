@@ -1,0 +1,38 @@
+<header>
+  <div class="container">
+    <nav>
+      <div class="nav-section-1">
+        <div class="burguer-left-icon">
+          <img src="/assets/burguer-icon.svg" alt="">
+        </div>
+        <div class="logo-container">
+          <img src="/assets/logo.svg" alt="">
+        </div>
+      </div>
+      <div class="nav-section-2">
+        <div class="text-user-summary">
+          <span class="text-user-summary-name">{{nombre}}</span>
+          <span class="text-user-summary-role">e{{correo}}</span>
+        </div>
+        <div class="button-avatar" (click)="showMenu()">
+          <div class="circle-avatar">
+            <img src="/assets/icon-user.svg" alt="" srcset="">
+          </div>
+          <div class="circle-status"></div>
+          <div class="circle-down">
+            <img src="/assets/icon-down.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="dropdown-box container">
+  <div class="dropdown-menu" [ngClass]="show ? 'active' : '' ">
+    <ul>
+      <a href=""><li>Datos personales</li></a>
+      <a href=""><li>Opciones</li></a>
+      <a href=""><li>Salir</li></a>
+    </ul>
+  </div>
+</div>
